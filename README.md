@@ -25,6 +25,8 @@ Foi proposto aos alunos o desenvolvimento de uma FinTech para auxiliar os usuár
 #### 4. GIF
 ![ezgif-1-80aa013c5c](https://github.com/jolucas245/FinTech-Auth-FIAP/assets/65248543/3b7b814a-c0ed-4a74-8634-a08daaf2a38f)
 
+#### 4. GIF Responsivity
+![ezgif-1-80aa013c5c](https://github.com/jolucas245/FinTech-Auth-FIAP/assets/65248543/cb32ec40-7663-4a54-aa45-7e608c3b75d3)
 
 
 
