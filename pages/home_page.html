@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#Controladin</title>
+  <link rel="icon" href="../assets/img/fav.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@rive-app/canvas@1.0.102"></script>
+
+  <link rel="stylesheet" href="../css/style_home.css">
+</head>
+<body>
+  <div class="container-fluid main">
+    <div class="row">
+      <div class="first-column d-none d-sm-none d-md-flex col-md-6 min-vh-100 d-flex flex-wrap align-items-stretch">
+        
+        <canvas id="canvas" class="flex-grow-1">
+          
+        </canvas>
+        <div class="main-text">
+          <span>Suas</span>
+          <span class="fw-bold">finanças,</span>
+          <span>seu</span>
+          <span class="fw-bold">controle.</span>
+          <span class="fs-6">#FiqueControlaDin</span>
+        </div>
+        <!-- Código que carrega o arquivo .riv como bg  -->
+        <script>
+          const r = new rive.Rive({
+            src: "../assets/rive/shapes_large_big.riv",
+            canvas: document.getElementById("canvas"),
+            autoplay: true,
+            onLoad: () => {
+              r.resizeDrawingSurfaceToCanvas();
+            },
+          });
+
+        </script>
+        
+      </div>
+      <div class="second-column col-md-6 min-vh-100">
+        
+        <div class="d-flex justify-content-center mt-5">
+          
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Login</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Registro</button>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+            
+            <div class="title ps-5">
+              <span class="fs-1 text-white fw-bolder">Bem vindo<br> de volta!</span>
+            </div>
+            
+            <div class="col">
+              <div class="form mt-5">
+                <input id="email" type="email" class="form__input" autocomplete="off" placeholder=" ">
+                <label for="email" class="form__label"  onclick="focusInput('email')">E-mail</label>
+              </div>
+              
+              <div class="form">
+                <input id="password" type="password" class="form__input mt-5" autocomplete="off" placeholder=" ">
+                <label for="password" class="form__label mt-5" onclick="focusInput('password')">Senha</label>
+                <p class="forgot text-end"><a href="">Esqueceu sua senha?</a></p>
+              </div>
+    
+              
+              <div class="text-center">
+                <button class="login-btn" type="button">Entrar</button>
+              </div>
+            </div>
+
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            
+            <div class="title ps-5">
+              <span class="fs-1 text-white fw-bolder">Cadastre-se<br>gratuitamente!</span>
+            </div>
+            
+            <div class="col">
+              <div class="form mt-5">
+                <input id="nome" type="text" class="form__input" autocomplete="off" placeholder=" ">
+                <label for="nome" class="form__label"  onclick="focusInput('nome')">Nome</label>
+              </div>
+
+              <div class="form mt-5">
+                <input id="email" type="email" class="form__input" autocomplete="off" placeholder=" ">
+                <label for="email" class="form__label"  onclick="focusInput('email')">E-mail</label>
+              </div>
+              
+              <div class="form mt-5">
+                <input id="password" type="password" class="form__input" autocomplete="off" placeholder=" ">
+                <label for="password" class="form__label" onclick="focusInput('password')">Senha</label>
+                <p class="forgot text-end"><a href="">Esqueceu sua senha?</a></p>
+              </div>
+    
+              
+              <div class="text-center">
+                <button class="register-btn" type="button">Registrar</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </div>
+</body>
+
+<!-- Função que foca no input quando clica no label -->
+<script>
+  function focusInput(inputId) {
+    document.getElementById(inputId).focus();
+  }
+</script>
+
+</html>

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+:root {
+  --primary-color: #0A1C3E;
+}
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  width: 100%;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.first-column {
+  margin: 0px !important;
+  padding: 0px !important;
+  overflow: hidden;
+}
+
+.second-column {
+  margin: 0px !important;
+  padding: 0px !important;
+  overflow: hidden;
+  background-color: rgb(9, 0, 31);
+}
+
+canvas {
+  filter: blur(70px);
+}
+
+.main-text {
+  position: absolute;
+  padding: 100px 100px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  font-size: 56px;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form{
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+  width: 20rem;
+  height: 3rem;
+}
+
+.form__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  font-size: inherit;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  padding: 1.5rem;
+  transition: all 500ms unset;
+}
+
+.form__input:hover{
+  border-color: white;
+}
+
+.form__input:focus{
+  border-color: white;
+}
+
+.form__label {
+  position: absolute;
+  left: 1rem;
+  top: 0.8rem;
+  padding: 0 0.5rem 0.5rem 0.5rem;
+  color:white;
+  cursor: text;
+  transition: top 500ms ease-in, left 500ms ease-in font-size 500ms ease-in;
+  background-color: rgb(9, 0, 31);
+}
+
+.form__input:focus ~ .form__label, 
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label{
+  top: -0.5rem;
+  font-size: 0.8rem;
+  left: 0.8rem;
+}
+
+.forgot, a {
+  padding-top: 60px;
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+
+.login-btn {
+  margin-top: 140px;
+  width: 150px;
+  height: 40px;
+  color: white;
+  font-weight: 500;
+  background-color: #1976D2;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 1px 2px 5px #000000;
+}
+
+.register-btn {
+  margin-top: 60px;
+  width: 150px;
+  height: 40px;
+  color: black;
+  font-weight: 500;
+  background-color: white;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 1px 2px 5px #000000;
+}
+
+.disclam {
+  font-weight: 400;
+}
+
+.cta {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.cta:hover{
+  font-size: 16px;
+  font-weight: 500;
+    text-decoration: underline;
+}
+
+
