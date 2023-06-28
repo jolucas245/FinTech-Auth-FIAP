@@ -12,7 +12,8 @@ Foi proposto aos alunos o desenvolvimento de uma FinTech para auxiliar os usuár
 ## Screenshots
 
 #### 1. Splash Screen
-![Splash Screenshot](https://github.com/jolucas245/FinTech-Auth-FIAP/assets/65248543/7a97ea70-4f48-4ca8-b2bb-7dc733a2b0c0)
+![splash](https://github.com/jolucas245/FinTech-Auth-FIAP/assets/65248543/33217b63-5e92-4204-92a9-3412909c6ef5)
+
 
 #### 2. Login Screen
 ![Login Screen](https://github.com/jolucas245/FinTech-Auth-FIAP/assets/65248543/6cb00f80-0ccd-44bc-9b65-627408d88932)
